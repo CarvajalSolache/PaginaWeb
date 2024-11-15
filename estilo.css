@@ -1,0 +1,229 @@
+.vinculos{ /* clase encargada de los vinculos del encabezado*/
+    margin: 15px;
+    position: relative;
+    top: 12px;
+    right: 20px;
+    display: inline-block; /* buscamos que esten hasta la derecha del encabezado y alienados en bloque*/
+    float: right;
+}
+
+a{ /*encargado de los hipervinculos*/
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-decoration: none; /* quitamos la rayita a los hipervinculos*/
+}
+
+h1{/*encargado del h1, nombre del restaurante en encabezado*/
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    position: relative;
+    left: 20px;
+}
+
+#pie{/*encargada del pie de pagina ¿*/
+    position: relative;
+    background-color:gray;
+}
+
+#promociones{/*div contenedora de las promociones*/
+    position: relative;
+    background-color: #e0e0e0;
+    top: 10px;
+}
+
+h2{/*encargada de la mayoria de titulos de secciones*/
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+p{/* encargada de la mayoria de texto*/
+    font-family: 'Arial', sans-serif;
+    color: black;
+    font-size: medium;
+}
+
+#alter{/*encargada de nombre de restaurante en menu principal, fucnion de poner el mismo fondo*/
+    background-color: #e0e0e0;
+    color: black;
+}
+
+.texto{/*divs encaragdas de contener el texto en menu principal, mensaje de bienvenida y contacto*/
+    background: transparent;
+    width: 600px;
+    height: 210px;
+    position: relative;
+    left: 28%;
+    top: 10%;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.ligas-comida{/*divs encargadas de todo el texto de los platillos, nombre, precio, etc*/
+    background:transparent;
+    width: 180px;
+    height: 40px;
+    margin: 4px;
+    position: relative;
+    justify-content: center;
+    left: 185px;
+    top: -140px
+}
+
+#logo{/*div contenedora de nombre de restaurante en encabezado*/
+    background: black;
+    display: inline-block;
+}
+
+#superior{/*div contenedora de todas las divs en el encabezado*/
+    background: black;
+    border: 3px solid grey;
+    width: 100%;
+    height: 10%;
+    position: relative;
+}
+
+#centro{/*div conetendora de la seccion menu principal*/
+    background-color: #e0e0e0;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 2px;
+}
+
+.producto{/*div contenedora de todas las div descriptivas hacia los platillos, foto, nombre, etc*/
+    display: inline-block;
+    margin-inline: 120px;
+    left: 4%;
+}
+
+.Bebidas{/*div contenedora de todo lo relacionado a las bebidas*/
+    display: inline-block;
+    margin-inline: 120px;
+    left: 4%;
+}
+
+.Paquetes{/*div contenedora de la seccion paquetes*/
+    left: 4%;
+}
+
+.Postres{/*div contenedora de todo lo relacionado a cada postre*/
+    display: inline-block;
+    margin-inline: 120px;
+    left: 4%;
+}
+
+#Menú-Comida{/*div contenedora de todas las div de platillos, del menu completo*/
+    background-color: #e0e0e0;
+    width: 100%;
+    position: relative;
+    top: 2px;
+}
+
+#foto{/*div encarhada de poner la foto y texto del platillo, bebida, etc*/
+    background: transparent;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 25px;
+    left: 10px;
+}
+
+.imagen-menu{ /* div encargada de controlar solo la foto de cada platillo*/
+    width: 180px; /* Ancho fijo de 200px */
+    height: 150px; /* Alto fijo de 150px , estas 2 se hacen para que tengan el mismo tamaño todas las fotos*/
+    object-fit: cover; 
+    position: relative;
+    right: 20px;
+}
+
+  
+.promocion{/*div contenedroa de las div de promociones*/
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+.promociones-galeria{/*div contenedora de las div de galeria*/
+    display: flex; /*hace que las div hijos(fotos) se ajusten horizontalmente*/
+}
+
+.paquetes-lista {/*div contenedora de los paquetes individualmente*/
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.imagen-galeria {/*div de cada foto puesta en la galeria*/
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    width: 100%; /* Ancho fijo de 200px */
+    height: 100%; /* Alto fijo de 150px */
+    object-fit: cover;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Contenedor principal del pie de página */
+.footer-container {
+    position: relative;
+    right: 60px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Sección de información */
+.footer-info,
+.footer-contact,
+.footer-social {
+    max-width: 250px;
+
+}
+
+/* Estilo de los enlaces sociales */
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+/*margen entre los diferentes elementos de la lista*/
+.footer-social ul li {
+    margin: 10px 0;
+}
+
+/* Estilo de los párrafos y enlaces solo para los que se encuentren dentro de la div footer-container */
+.footer-container p, a {
+    font-size: 14px;
+    color: #bdc3c7;
+}
+.footer-social ul li a {
+    font-size: 16px;
+    color: #bdc3c7;
+    text-decoration: none;
+}
+
+/* Sección de copyright */
+.footer-bottom p {
+    background-color: #34495e;
+    padding: 10px 0;
+    font-size: 14px;
+    color: white;
+}
+
